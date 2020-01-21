@@ -1,0 +1,3341 @@
+html {
+			-webkit-box-sizing:border-box;
+			-mox-box-sizing:border-box;
+			box-sizing:border-box;
+		}
+		*,*:before, *:after {
+			-webkit-box-sizing:inherit;
+			-moz-box-sizing:inherit;
+			box-sizing:inherit;
+		}
+		
+		#container {
+			display:grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-gap:0.5em;
+			grid-auto-rows: minmax(100px, auto);
+			max-width:1200px;
+			position:relative;
+			margin:0 auto;
+			
+		}
+		img {
+			max-width:100%;
+			height:auto;
+		}
+		
+		header {
+			grid-column:1/13;
+			background-color:white;
+			display:flex;
+			justify-content: center;
+			align-items:center;
+		}
+		.cart {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			display:flex;
+			justify-content:center;
+			align-items: center;
+			font-family:"Mason Sans OT";
+			text-size:20px;
+		
+		}
+		
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		}
+		
+		section {
+			grid-column: 1/13;
+			background-color:black;
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			display:flex;
+			align-items: right;
+			
+			
+		}
+		
+		aside {
+			grid-column:1/13;
+			background-color:white;
+			color:black;
+			font-family: Baskerville;
+			font-size:15px;
+			align-content: center;
+			
+		}
+		
+		.product1 {
+			grid-column:1/13;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+		}
+		
+		.product2 {
+			grid-column:1/13;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+		}
+		
+		.product3 {
+			grid-column:1/13;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+		}
+		
+		.product4 {
+			grid-column:1/13;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+		}
+		
+		.socialmedia {
+			grid-column:1/13;
+			background-color:white;
+			display:flex;
+			align-content:center;
+			font-family:"Mason Sans OT";
+			z-index:100;
+		}
+		
+		footer {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			text-align: left;
+			display:flex;
+			justify-content: space-around;
+			padding-left: 65px;
+			align-items: center;
+		}
+
+@media only screen and (min-width:620px) {
+	img {
+			max-width:100%;
+			height:auto;
+		}
+	header {
+			grid-column: 1/9;
+			grid-row:1/3;
+			display:flex;
+			align-items:center;
+			
+	}
+	.cart {
+			grid-column: 9/13;
+			grid-row:1/3;
+			align-items:center;
+		
+		}
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		}
+		
+		section {
+			grid-column:1/13;
+			display:flex;
+			align-items: right;
+		}
+		
+		aside {
+			grid-column:1/13;
+		}
+		.product1 {
+			grid-column:1/7;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+			
+		}
+		.product2 {
+			grid-column:7/13;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+			
+		}
+		.product3 {
+			grid-column:1/7;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+		}
+		.product4 {
+			grid-column:7/13;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+			
+		}
+	
+		}
+@media only screen and (min-width:900px) {
+	
+	.centered {
+		z-index: 100;
+		display:flex;
+		justify-content: center;
+		align-items:center;
+		text-align:center;
+	}
+	
+	header {
+		grid-column:1/9;
+		grid-row:1/2;
+		display:flex;
+		align-items:center;
+	}
+	.cart {
+		grid-column:9/13;
+		grid-row:1/2;
+		
+	}
+	
+	nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+			border:#000000;
+		
+		}
+	
+	section {
+		grid-column:1/9;
+		display:flex;
+		align-items: right;
+
+	}
+	
+	aside {
+		grid-column:9/13;
+	}
+	
+	.product1 {
+			grid-column:1/4;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+			
+			
+		}
+	.product2 {
+			grid-column:4/7;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+			
+		}
+	.product3 {
+			grid-column:7/10;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+		}
+	.product4 {
+			grid-column:10/13;
+			text-align:center;
+			background-color:#F7F4C7;
+			color:black;
+			font-family:"Mason Sans OT";
+			font-size: 27px;
+		}
+
+		}
+		
+		.trench1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.trench2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.trench7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.trench9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		footer {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			text-align: left;
+			display:flex;
+			justify-content: space-around;
+			padding-left: 65px;
+			align-items: center;
+		}
+@media only screen and (min-width:620px) {
+	img {
+			max-width:100%;
+			height:auto;
+		}
+	header {
+			grid-column: 1/13;
+			grid-row:1/3;
+			display:flex;
+			align-items:center;
+			
+	}
+	.cart {
+			grid-column: 9/13;
+			grid-row:1/3;
+			align-items:center;
+		
+		}
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		
+	}
+		}
+@media only screen and (min-width:900px) {
+	
+	header {
+		grid-column:1/13;
+		grid-row:1/2;
+		display:flex;
+		align-items:center;
+	}
+	.cart {
+		grid-column:9/13;
+		grid-row:1/2;
+		
+	}
+	
+	nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+			border:#000000;
+
+		}
+	.trench1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.trench2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.trench9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+	}
+	
+	.fur1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.fur2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.fur7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.fur9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		footer {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			text-align: left;
+			display:flex;
+			justify-content: space-around;
+			padding-left: 65px;
+			align-items: center;
+		}
+		}
+		
+@media only screen and (min-width:620px) {
+	img {
+			max-width:100%;
+			height:auto;
+		}
+	header {
+			grid-column: 1/13;
+			grid-row:1/3;
+			display:flex;
+			align-items:center;
+			
+	}
+	.cart {
+			grid-column: 9/13;
+			grid-row:1/3;
+			align-items:center;
+		
+		}
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		
+	}
+		}
+@media only screen and (min-width:900px) {
+	
+	header {
+		grid-column:1/13;
+		grid-row:1/2;
+		display:flex;
+		align-items:center;
+	}
+	.cart {
+		grid-column:9/13;
+		grid-row:1/2;
+		
+	}
+	
+	nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+			border:#000000;
+
+		}
+	
+ 
+		.fur1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.fur2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.fur9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		}
+		
+				.jean1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.jean2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.jean7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.jean9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		
+		
+		.mjean1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.mjean2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		footer {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			text-align: left;
+			display:flex;
+			justify-content: space-around;
+			padding-left: 65px;
+			align-items: center;
+		}
+		}
+@media only screen and (min-width:620px) {
+	img {
+			max-width:100%;
+			height:auto;
+		}
+	header {
+			grid-column: 1/13;
+			grid-row:1/3;
+			display:flex;
+			align-items:center;
+			
+	}
+	.cart {
+			grid-column: 9/13;
+			grid-row:1/3;
+			align-items:center;
+		
+		}
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		
+	}
+		}
+@media only screen and (min-width:900px) {
+	
+	header {
+		grid-column:1/13;
+		grid-row:1/2;
+		display:flex;
+		align-items:center;
+	}
+	.cart {
+		grid-column:9/13;
+		grid-row:1/2;
+		
+	}
+	
+	nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+			border:#000000;
+
+		}
+	
+	.jean1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.jean2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.jean9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.mjean1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+	
+		
+		
+		.mjean2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		}
+				.jean1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.jean2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.jean7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.jean9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		
+		
+		.mjean1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.mjean2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		footer {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			text-align: left;
+			display:flex;
+			justify-content: space-around;
+			padding-left: 65px;
+			align-items: center;
+		}
+		}
+@media only screen and (min-width:620px) {
+	img {
+			max-width:100%;
+			height:auto;
+		}
+	header {
+			grid-column: 1/13;
+			grid-row:1/3;
+			display:flex;
+			align-items:center;
+			
+	}
+	.cart {
+			grid-column: 9/13;
+			grid-row:1/3;
+			align-items:center;
+		
+		}
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		
+	}
+		}
+@media only screen and (min-width:900px) {
+	
+	header {
+		grid-column:1/13;
+		grid-row:1/2;
+		display:flex;
+		align-items:center;
+	}
+	.cart {
+		grid-column:9/13;
+		grid-row:1/2;
+		
+	}
+	
+	nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+			border:#000000;
+
+		}
+	
+	.jean1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.jean2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.jean9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.mjean1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+	
+		
+		
+		.mjean2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		}
+		}
+			
+		.leather1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.leather7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.leather9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.mleather1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.mleather2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		
+		}
+		
+		
+		footer {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			text-align: left;
+			display:flex;
+			justify-content: space-around;
+			padding-left: 65px;
+			align-items: center;
+		}
+
+@media only screen and (min-width:620px) {
+	img {
+			max-width:100%;
+			height:auto;
+		}
+	header {
+			grid-column: 1/13;
+			grid-row:1/3;
+			display:flex;
+			align-items:center;
+			
+	}
+	.cart {
+			grid-column: 9/13;
+			grid-row:1/3;
+			align-items:center;
+		
+		}
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		
+	}
+		}
+@media only screen and (min-width:900px) {
+	
+	header {
+		grid-column:1/13;
+		grid-row:1/2;
+		display:flex;
+		align-items:center;
+	}
+	.cart {
+		grid-column:9/13;
+		grid-row:1/2;
+		
+	}
+	
+	nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+			border:#000000;
+
+		}
+	
+		.leather1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.leather2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.leather9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+	
+	    }
+	
+		.mleather1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.mleather2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+	
+		}
+			.mleather1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.mleather2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		
+		}
+		
+		.section2 {
+			grid-column:1/13;	
+			background-color:black;
+			color:white;
+			font-family: "Mason Sans OT";
+			font-size:40px;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+		}
+			
+		.mjean1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.mjean2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		footer {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			text-align: left;
+			display:flex;
+			justify-content: space-around;
+			padding-left: 65px;
+			align-items: center;
+		}
+
+@media only screen and (min-width:620px) {
+	img {
+			max-width:100%;
+			height:auto;
+		}
+	header {
+			grid-column: 1/13;
+			grid-row:1/3;
+			display:flex;
+			align-items:center;
+			
+	}
+	.cart {
+			grid-column: 9/13;
+			grid-row:1/3;
+			align-items:center;
+		
+		}
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		
+	
+		}
+		}
+@media only screen and (min-width:900px) {
+	
+	header {
+		grid-column:1/13;
+		grid-row:1/2;
+		display:flex;
+		align-items:center;
+	}
+	.cart {
+		grid-column:9/13;
+		grid-row:1/2;
+		
+	}
+	
+	nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+			border:#000000;
+
+		}
+	
+		.mleather1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.mleather2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		
+		.mjean1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+	
+		
+		
+		.mjean2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mjean4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mjean6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		}
+		.leather1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.leather7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.leather9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.section2 {
+			grid-column:1/13;	
+			background-color:black;
+			color:white;
+			font-family: "Mason Sans OT";
+			font-size:40px;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+		}
+		
+		.jean1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.jean2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.jean7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.jean9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.fur1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.fur2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.fur7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.fur9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.trench1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.trench2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.trench7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.trench9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		footer {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			text-align: left;
+			display:flex;
+			justify-content: space-around;
+			padding-left: 65px;
+			align-items: center;
+		}
+
+@media only screen and (min-width:620px) {
+	img {
+			max-width:100%;
+			height:auto;
+		}
+	header {
+			grid-column: 1/13;
+			grid-row:1/3;
+			display:flex;
+			align-items:center;
+			
+	}
+	.cart {
+			grid-column: 9/13;
+			grid-row:1/3;
+			align-items:center;
+		
+		}
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		
+	}
+		}
+@media only screen and (min-width:900px) {
+	
+	header {
+		grid-column:1/13;
+		grid-row:1/2;
+		display:flex;
+		align-items:center;
+	}
+	.cart {
+		grid-column:9/13;
+		grid-row:1/2;
+		
+	}
+	
+	nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+			border:#000000;
+
+		}
+	
+		.leather1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.leather2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.leather9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+	
+	}
+	
+	.jean1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.jean2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.jean7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.jean9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.jean12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.fur1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.fur2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.fur7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.fur9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.fur12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.section4 {
+			grid-column:1/13;	
+			background-color:black;
+			color:white;
+			font-family: "Mason Sans OT";
+			font-size:40px;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+		}
+	
+		.trench1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.trench2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.trench7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.trench9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.trench12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+	}
+		
+		}
+		

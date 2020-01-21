@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang ="en-US">
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta charset="UTF-8">
+<title>Leather</title>
+	<style>
+		html {
+			-webkit-box-sizing:border-box;
+			-mox-box-sizing:border-box;
+			box-sizing:border-box;
+		}
+		*,*:before, *:after {
+			-webkit-box-sizing:inherit;
+			-moz-box-sizing:inherit;
+			box-sizing:inherit;
+		}
+		
+		#container {
+			display:grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-gap:2em;
+			grid-auto-rows: minmax(125px, auto);
+			max-width:1200px;
+			position:relative;
+			margin:0 auto;
+			
+		}
+		img {
+			max-width:100%;
+			height:auto;
+		}
+		
+		header {
+			grid-column:1/13;
+			background-color:white;
+			display:flex;
+			justify-content: center;
+			align-items:center;
+		}
+		
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:10px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		}
+		section {
+			grid-column:1/13;	
+			background-color:black;
+			color:white;
+			font-family: "Mason Sans OT";
+			font-size:40px;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+		
+		}
+			
+		.leather1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.leather7 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather8 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.leather9 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather10 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather11 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather12 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		
+		.mleather1 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.mleather2 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather3 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather4 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather5 {
+			grid-column:1/7;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather6 {
+			grid-column:7/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		
+		}
+		
+		
+		footer {
+			grid-column:1/13;
+			background-color:black;
+			color:white;
+			text-align: left;
+			display:flex;
+			justify-content: space-around;
+			padding-left: 65px;
+			align-items: center;
+		}
+
+@media only screen and (min-width:620px) {
+	img {
+			max-width:100%;
+			height:auto;
+		}
+	header {
+			grid-column: 1/13;
+			grid-row:1/3;
+			display:flex;
+			align-items:center;
+			
+	}
+	.cart {
+			grid-column: 9/13;
+			grid-row:1/3;
+			align-items:center;
+		
+		}
+		nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+		
+	}
+		}
+@media only screen and (min-width:900px) {
+	
+	header {
+		grid-column:1/13;
+		grid-row:1/2;
+		display:flex;
+		align-items:center;
+	}
+	.cart {
+		grid-column:9/13;
+		grid-row:1/2;
+		
+	}
+	
+	nav {
+			grid-column:1/13;
+			background-color:#F7F4C7;
+			color:black;
+			font-size:20px;
+			display:flex;
+			justify-content: space-evenly;
+			align-items:center;
+			font-family:"Mason Sans OT";
+			border:#000000;
+
+		}
+	
+		.leather1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.leather2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.leather7 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather8 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+	
+		.leather9 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather10 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather11 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.leather12 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+	
+	    }
+	
+		.mleather1 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+			
+		}
+		
+		.mleather2 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather3 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		.mleather4 {
+			grid-column:1/5;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather5 {
+			grid-column:5/9;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+			
+		}
+		.mleather6 {
+			grid-column:9/13;
+			background-color:#F7F4C7;
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			font-family:Baskerville;
+		}
+		
+	
+	
+		
+		
+
+	
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="container"> 
+		
+		<header>
+		<img src="images/fclogo.png" alt="logo">
+		
+		</header>
+		
+		<nav>
+			<a href="index.html"><b>HOME</b></a>
+			<a href="product1.html"><b>WOMENS</b></a>
+			<a href="product2.html"><b>MENS</b></a>
+			
+		<img src="images/searchicon.png" alt="searchicon">
+		<img src="images/cart.png" alt="cart">
+		</nav>
+		
+		<section align="center">LEATHER</section>
+
+		<div class="leather1">
+		<figure>
+		<img src="images/leather1.jpg" alt="leather1">
+			<figcaption align="center"><b>Cropped Pink Leather<br><br>$130</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather2">
+		<figure>
+		<img src="images/leather2.jpg" alt="leather2">
+		<figcaption align="center"><b>Belted Teal Leather<br><br>$130</b></figcaption>
+		</figure>
+		</div>	
+		
+		<div class="leather3">
+		<figure>
+		<img src="images/leather3.jpg" alt="leather3">
+		<figcaption align="center"><b>Classic Brown Leather<br><br>$150</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather4">
+		<figure>
+		<img src="images/leather4.jpg" alt="leather4">
+		<figcaption align="center"><b>Bright White Leather<br><br>$200</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather5">
+		<figure>
+		<img src="images/leather5.jpg" alt="leather5">
+		<figcaption align="center"><b>Classic Black Leather<br><br>$175</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather6">
+		<figure>
+		<img src="images/leather6.jpg" alt="leather6">
+		<figcaption align="center"><b>Moto Inside Leather<br><br>$100</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather7">
+		<figure>
+		<img src="images/leather7.jpg" alt="leather8">
+		<figcaption align="center"><b>Moto Sleeveless Leather<br><br>$155</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather8">
+		<figure>
+		<img src="images/leather8.jpg" alt="leather8">
+		<figcaption align="center"><b>Orange Studded Leather<br><br>$175</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather9">
+		<figure>
+		<img src="images/leather9.jpg" alt="leather9">
+		<figcaption align="center"><b>Silver Shiny Leather<br><br>$135</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather10">
+		<figure>
+		<img src="images/leather10.jpg" alt="leather8">
+		<figcaption align="center"><b>Jet Black Leather <br><br>$180</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather11">
+		<figure>
+		<img src="images/leather11.jpg" alt="leather11">
+		<figcaption align="center"><b>Black and Silver Studded Leather<br><br>$175</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="leather12">
+		<figure>
+		<img src="images/leather12.jpg" alt="leather12">
+		<figcaption align="center"><b>Red Leather<br><br>$185</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="mleather1">
+		<figure>
+		<img src="images/mleather1.jpg" alt="leather1">
+			<figcaption align="center"><b>Classic Black Leather Jacket<br><br>$130</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="mleather2">
+		<figure>
+		<img src="images/mleather2.jpg" alt="leather2">
+		<figcaption align="center"><b>White Leather Jacket<br><br>$130</b></figcaption>
+		</figure>
+		</div>	
+		
+		<div class="mleather3">
+		<figure>
+		<img src="images/mleather3.jpg" alt="leather3">
+		<figcaption align="center"><b>Leather Armed Jacket<br><br>$150</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="mleather4">
+		<figure>
+		<img src="images/mleather4.jpg" alt="leather4">
+		<figcaption align="center"><b>Fur Collar Leather Jacket<br><br>$200</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="mleather5">
+		<figure>
+		<img src="images/mleather5.jpg" alt="leather5">
+		<figcaption align="center"><b>Classic Brown Fur Leather Jacket<br><br>$175</b></figcaption>
+		</figure>
+		</div>
+		
+		<div class="mleather6">
+		<figure>
+		<img src="images/mleather6.jpg" alt="leather6">
+		<figcaption align="center"><b>Trendy Black Leather Jacket<br><br>$100</b></figcaption>
+		</figure>
+		</div>
+		
+	
+		<footer>
+		
+		<div><p><b>Address:</b><i><br>
+				409 South Main Street<br>
+			Harrisonburg, VA 22801<br></i><p><b>Contact Information:</b><i>jessica@jessicaleighbodner.com<br></i></p></p></div>
+		
+		
+		<div><b>Privacy Policy</b></div>
+		</footer>
+		
+		
+	</div>
+</body>
+</html>
+
